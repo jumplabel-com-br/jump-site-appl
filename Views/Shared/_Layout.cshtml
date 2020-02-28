@@ -1,0 +1,322 @@
+﻿@model SiteJump.Models.Email
+@using SiteJump.Services
+@inject SEOHelperService Services
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158007482-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158007482-1');
+    </script>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+
+    <link href="~/lib/aos-master/demo/css/styles.css" rel="stylesheet" />
+    <link href="~/lib/aos-master/dist/aos.css" rel="stylesheet" />
+
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/Popper/popper.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/metisMenu/dist/jquery.metisMenu.js"></script>
+        <script src="~/lib/slimScroll/jquery.slimscroll.js"></script>
+        <script src="~/lib/pace/pace.js"></script>
+        <script src="~/lib/toastr/toastr.js"></script>
+        <script src="~/lib/toastr/toastr.min.js"></script>
+        <script src="~/js/script.js" asp-append-version="true"></script>
+
+        <!-- Only for demo purpose -->
+        <script src="~/js/skin.config.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/Popper/popper.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/lib/metisMenu/dist/jquery.metisMenu.js"></script>
+        <script src="~/lib/pace/pace.min.js"></script>
+        <script src="~/lib/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="~/lib/toastr/toastr.js"></script>
+        <script src="~/lib/toastr/toastr.min.js"></script>>
+        <script src="~/js/script.js" asp-append-version="true"></script>
+    </environment>
+
+    <!--Impor JQuery Mask Plugin-->
+    <script src="~/lib/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
+    <script src="~/lib/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="~/lib/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/lib/iCheck/icheck.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    @{
+        string segements = $"{this.ViewContext.RouteData.Values["controller"]}/{this.ViewContext.RouteData.Values["action"]}";
+        @(Html.Raw(Services.InjectMetaInfo(segements)));
+        segements = null;
+    }
+
+</head>
+<body id="page-top" class="landing-page no-skin-config js-focus-visible pace-done">
+
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner">
+            </div>
+        </div>
+        <div class="pace-activity">
+        </div>
+    </div>
+    <div class="navbar-wrapper" data-aos="fade-down">
+        <nav class="navbar navbar-expand-lg navbar-default">
+            <div class="container-mobile-text-center">
+                <div class="col-12">
+                    <img src="~/Componentes/jumplabellogo.svg" height="80" width="150" title="jump-label-logo" alt="jump-label-logo">
+                </div>
+            </div>
+            <div class="container-mobile-text-center">
+                <div class="col-12">
+                    <button class="navbar-toggler" id="navbarNavButton" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-list"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Index" id="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Solucoes" id="Solucoes">Soluções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Consultoria" id="Consultoria">Consultoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Treinamentos" id="Treinamentos">Treinamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Tecnologias" id="Tecnologias">Parcerias e tecnologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="OneTrustLGPD" id="OneTrustLGPD">Soluções OneTrust para LGPD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-fragment="contato" onclick="$('#navbarNavDropdown').css('display') == 'block' ? $('#navbarNavDropdown').removeClass('show') : ''">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link element-text-color-white mobile-text-center" href="https://jumplabel.com.br/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    @RenderBody()
+    @RenderSection("toast", required: false)
+
+    <section class="header-back eleven" id="contato">
+        <div class="row">
+            <div class="col-6">
+                <div class="col-12 box-shadow-opacity-0 color-fff spacing-top-md spacing-bottom-md spacing-top-md-mobile">
+                    <br>
+                    <h2>Fale Conosco</h2>
+                    <p class="color-fff p-contato">
+                        Nossos canais de atendimento:
+                    </p>
+                    <p class="color-fff p-contato">
+                        <i class="fa fa-phone-square left"></i> +55 (11) 3051-4389
+                    </p>
+                    <p class="color-fff p-contato">
+                        <i class="fa fa-envelope"></i> contato@jumplabel.com.br
+                    </p>
+                    <p class="color-fff p-contato">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i> Rua Coronel Oscar Porto, 736 <br> <i class="fa fa-location-arrow" aria-hidden="true" style="visibility:hidden"></i> Paraíso - SP | BR
+                    </p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="col-sm-6 b-r spacing-top-md spacing-top-md-mobile">
+                    <form role="form" id="FormEmail">
+                        <input type="hidden" asp-for="Destino" value="contato@jumplabel.com.br" />
+                        <input type="hidden" asp-for="Assunto" value="Contato" />
+
+                        <div class="form-group">
+                            <input type="text" asp-for="Nome" placeholder="Nome" class="form-control" style="border-radius: 10px" onkeyup="Message();">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" asp-for="Remetente" placeholder="Email" class="form-control" style="border-radius: 10px" onkeyup="Message();">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" asp-for="Telefone" placeholder="Telefone" class="form-control mask-telefone" style="border-radius: 10px" onkeyup="Message();">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensagem" name="rascunho" id="rascunho" class="form-control" style="border-radius: 10px" onkeyup="Message('#FormEmail');"></textarea>
+                            <textarea asp-for="Mensagem" style="display: none;"></textarea>
+                            <div>
+                                <button class="btn btn-sm btn-rounded btn-block btn-warning float-right m-t-n-xs col-4 mt-3 btn-submit-contact spacing-bottom-md-mobile" type="button" onclick="SendEmail('#FormEmail');">
+                                    <strong>Enviar</strong>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="google-map" id="map1"></section>
+    <div id="errorGeoLocation"></div>
+
+    <footer class="header-back twelve">
+        <div class="row">
+            <div class="col-12 text-center spacing-top-sm spacing-bottom-sm" >
+                <h2><span class="copyright  color-fff">© 2019 Jump Label Solutions</span></h2>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast toast-success toast-send-email-success toast-bootstrap hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header toast-success">
+            <i class="fa fa-newspaper-o"></i>
+            <strong class="mr-auto m-l-sm">Aviso</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="toast-body toast-success">
+            Email enviado com sucesso;
+        </div>
+    </div>
+
+    <div class="toast toast-danger toast-alert-input toast-bootstrap hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header toast-danger">
+            <i class="fa fa-newspaper-o"></i>
+            <strong class="mr-auto m-l-sm">Aviso</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="toast-body toast-danger toast-message-input-required">
+            <!--via jqeuery-->
+        </div>
+    </div>
+
+    <div class="modal inmodal" id="OneTrust" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">WEBINAR</h4>
+                    <small class="font-bold">OneTrust</small>
+                </div>
+                <div class="modal-body">
+                    <form id="FormEmailModal">
+                        <input type="hidden" asp-for="Destino" value="contato@jumplabel.com.br" />
+                        <input type="hidden" asp-for="Assunto" value="WEBINAR OneTrust" />
+
+
+                        <div class="row form-group">
+                            <div class="col-2">
+                                <span class="font-bold">Nome:</span>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" asp-for="Nome" placeholder="Nome" />
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-2">
+                                <span class="font-bold">Email:</span>
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control" asp-for="Remetente" placeholder="Email" onkeyup="Message('#FormEmailModal');" />
+                            </div>
+                        </div>
+
+                        <textarea asp-for="Mensagem" class="form-control" style="display: none"></textarea>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="SendEmail('#FormEmailModal');">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--React CDN-->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!--React CDN-->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70"></script>
+
+    <script type="text/javascript" src="~/js/Layout.js?time=@DateTime.Now.ToString()"></script>
+    <script>
+        $(function () {  // $(document).ready shorthand
+            $('body').fadeIn('slow');
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.hideme').each(function (i) {
+
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).animate({ 'opacity': '1' }, 1500);
+                        $(this).addClass('animated fadeInUp')
+                        $('.hidemeRotate').addClass('rotateIn')
+
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+    <script src="~/lib/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
