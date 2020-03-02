@@ -80,10 +80,10 @@ function Message(form) {
             $(`${form} #Telefone`).val() + ';' +
             $(`${form} #rascunho`).val();
 
-    } else if (form == '#modalTraining') {
-        strMessage = $(`${form} #Nome`).val() + ';' +
-            $(`${form} #Remetente`).val() + ';' +
-            $(`${form} #Telefone`).val() + ';' +
+    } else if (form == '#formTraining') {
+        strMessage = $(`${form} #Nome`).val() + ' ;' +
+            $(`${form} #Remetente`).val() + ' ;' +
+            $(`${form} #Telefone`).val() + ' ;' +
             $(`${form} input[name=tipoCurso]`).val();
     }
     else if (true) {
@@ -104,9 +104,15 @@ function SendEmail(form, envioToUser = false) {
     }
 
     if (envioToUser) {
-        strMessage = `Parábens ${strMessage.split(' ')[0]} agora você pode acompanhar o trienamento de OneTrust através do link ...`
-        $(`${form} #Mensagem`).val(strMessage);
-        $(`${form} #Destino`).val($(`${form} #Remetente`).val());
+
+        let destino = $(`${form} #Destino`).val();
+        let remetente = $(`${form} #Remetente`).val();
+
+        let strM = `Parábens ${strMessage.split(' ')[0]} agora você pode acompanhar seu treinamento através do link ...`
+        $(`${form} #Mensagem`).val(strM);
+        $(`${form} #Destino`).val(remetente);
+        $(`${form} #Remetente`).val(destino);
+
     }
 
     $.ajax({
@@ -117,14 +123,17 @@ function SendEmail(form, envioToUser = false) {
     })
         .done(function (data) {
 
-            if (form == '#FormEmailModal') {
+            if (form == '#FormEmailModal' || form == '#formTraining') {
                 $('.toast-send-email-success .toast-body').html('Inscrição efetuada com êxito');
-                $(`${form} #Destino`).val() == 'contato@jumplabel.com.br' ? SendEmail('#FormEmailModal', true) : '';
+                $(`${form} #Destino`).val() == 'contato@jumplabel.com.br' ? SendEmail(`${form}`, true) : '';
+
+                console.log('1');
             }
 
             $('.toast-send-email-success').toast('show');
 
-            console.log('teste0')
+            console.log('3')
+
 
         })
         .fail(function () {

@@ -43,7 +43,7 @@ $('#h2-robot-process-automation-solutions').on('click', function () {
 
 function widthMenor700px() {
     if ($(window).width() < 768) {
-        $('img').attr({ 'width': '80', 'height': '80' })
+        $('img').attr({ 'width': '70', 'height': '80' })
         $('.img-pena-tecnologias').attr({ 'width': '40', 'height': '40' })
         $('.ft-18').css({ 'font-size': '8px' })
         $('.hover-ef8822').css({ 'font-size': '13px' })
