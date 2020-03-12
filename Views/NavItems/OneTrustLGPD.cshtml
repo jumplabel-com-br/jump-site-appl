@@ -1,4 +1,6 @@
-﻿<section class="header-back tweenty">
+﻿@model SiteJump.Models.Email
+
+<section class="header-back tweenty">
     <div class="row form-group text-center">
         <div class="col-12 div-solucoes-onetrust-lgpd spacing-top-md spacing-top-half-mobile">
             <img data-aos="fade-up" width="35" height="43" src="https://jumplabel.com.br/wp-content/uploads/2019/07/jump-label-02.png" class="attachment-large size-large img-0-onetrust" style="margin-top: 6%">
@@ -71,11 +73,11 @@
     <div class="row form-group">
         <div style="margin-left:14%"></div>
         <div class="col-3 mt-2 spacing-top-md-mobile">
-            <img data-aos="fade-up" width="215" height="60" src="https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01.png" class="attachment-large size-large" alt="" srcset="https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01.png 824w, https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01-300x87.png 300w, https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01-768x223.png 768w" sizes="(max-width: 824px) 100vw, 824px" style="margin-top: 8%">
+            <img data-aos="fade-up" width="215" height="60" src="https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01.png" class="attachment-large size-large spacing-left-md-mobile" alt="" srcset="https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01.png 824w, https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01-300x87.png 300w, https://jumplabel.com.br/wp-content/uploads/2019/11/OneTrustLogo-01-768x223.png 768w" sizes="(max-width: 824px) 100vw, 824px" style="margin-top: 8%">
         </div>
         <div class="col-5 div-sub-title-onetrust" style="margin-top: 2%">
             <h2 data-aos="fade-up" class="spacing-bottom-md-mobile text-onetrust-h2">
-                <strong class="s-11px-mobile">O que você pode fazer com a OneTrust?</strong>
+                <strong class="s-14px-mobile">O que você pode fazer com a OneTrust?</strong>
             </h2>
         </div>
     </div>
@@ -183,7 +185,7 @@
     <div class="row form-group">
         <div class="col-4 replace-col-4-to-col-2"></div>
         <div class="col-1 col-12-mobile text-center-mobile spacing-top-sm-plus-3 spacing-top-md-mobile">
-            <img data-aos="fade-up" width="74" height="65" src="https://jumplabel.com.br/wp-content/uploads/2019/11/jump-label-one-trust-9.png" class="attachment-full size-full" alt="">
+            <img data-aos="fade-up" width="74" height="65" src="https://jumplabel.com.br/wp-content/uploads/2019/11/jump-label-one-trust-9.png" class="attachment-full size-full spacing-bottom-md-mobile" alt="">
         </div>
         <div class="col-6 color-fff col-12-mobile spacing-top-sm">
             <h2 class="h2-onetrust-lgpd" data-aos="fade-up"> <span>01</span> Aumentar a receita</h2>
@@ -199,7 +201,7 @@
     <div class="row form-group">
         <div class="col-4 replace-col-4-to-col-2"></div>
         <div class="col-1 col-12-mobile text-center-mobile" style="margin-top: 3%;">
-            <img data-aos="fade-up" width="75" height="84" src="https://jumplabel.com.br/wp-content/uploads/2019/11/jump-label-one-trust-1.png" class="attachment-full size-full" alt="">
+            <img data-aos="fade-up" width="75" height="84" src="https://jumplabel.com.br/wp-content/uploads/2019/11/jump-label-one-trust-1.png" class="attachment-full size-full spacing-bottom-md-mobile" alt="">
         </div>
         <div class="col-6 color-fff col-12-mobile">
             <h2 class="h2-onetrust-lgpd" data-aos="fade-up"> <span>02</span> Mitigar riscos</h2>
@@ -215,9 +217,9 @@
     <div class="row form-group">
         <div class="col-4 replace-col-4-to-col-2"></div>
         <div class="col-1 col-12-mobile text-center-mobile" style="margin-top: 3%;">
-            <img data-aos="fade-up" width="75" height="75" src="https://jumplabel.com.br/wp-content/uploads/2019/11/jump-label-one-trust-7.png" class="attachment-full size-full" alt="">
+            <img data-aos="fade-up" width="75" height="75" src="https://jumplabel.com.br/wp-content/uploads/2019/11/jump-label-one-trust-7.png" class="attachment-full size-full spacing-bottom-md-mobile" alt="">
         </div>
-        <div class="col-6 color-fff col-12-mobile">
+        <div class="col-4 color-fff col-12-mobile">
             <h2 class="h2-onetrust-lgpd" data-aos="fade-up"> <span>03</span> Aumentar a eficiência</h2>
             <ul data-aos="fade-up" class="ul-ml-50px-mobile ul-onetrust spacing-bottom-md spacing-bottom-md-mobile">
                 <li class="li-descricao-onetrust-lgpd">Aumentar a agilidade e a capacidade de resposta dos dados</li>
@@ -231,7 +233,7 @@
     <div class="row form-group ml-5percent-mobile spacing-top-sm spacing-top-md-mobile">
         <div class="col-4"></div>
         <div class="col-4 pl-35-mobile">
-            <button type="button" data-aos="fade-up" class="btn btn-lg btn-block btn-warning btn-rounded btn-one-trust-comece-agora">
+            <button type="button" data-aos="fade-up" data-toggle="modal" data-target="#modalOneTrust" class="btn btn-lg btn-block btn-warning btn-rounded btn-one-trust-comece-agora">
                 <strong>Comece agora mesmo</strong>
             </button>
         </div>
@@ -244,5 +246,55 @@
         </div>
     </div>
 </section>
+
+<div class="modal inmodal show" id="modalOneTrust" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close element-text-color-white" data-dismiss="modal"><span aria-hidden="true" class="element-text-color-white">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title modal-title-training element-text-color-orange">Proteção de Dados</h4>
+            </div>
+            <div class="modal-body">
+                <form id="formOneTrust">
+                    <input type="hidden" asp-for="Destino" value="contato@jumplabel.com.br" />
+                    <input type="hidden" asp-for="Assunto" value="Treinamento" />
+
+                    <div class="row text-center has-warning">
+                        <div class="col-12">
+                            <input type="text" class="form-control" asp-for="Nome" placeholder="Nome" onkeyup="Message('#formOneTrust');" />
+                        </div>
+                    </div>
+                    <div class="mt-3"></div>
+                    <div class="row text-center has-warning">
+                        <div class="col-12">
+                            <input type="text" class="form-control" asp-for="Remetente" placeholder="Email" onkeyup="Message('#formOneTrust');" />
+                        </div>
+                    </div>
+                    <div class="mt-3"></div>
+                    <div class="row text-center has-warning">
+                        <div class="col-12">
+                            <input type="text" class="form-control mask-telefone" asp-for="Telefone" placeholder="Telefone" onkeyup="Message('#formOneTrust');" />
+                        </div>
+                    </div>
+
+                    <div class="mt-3"></div>
+                    <div class="row text-center has-warning">
+                        <div class="col-12">
+                            <input type="text" class="form-control" name="Empresa" id="Empresa" placeholder="Empresa" onkeyup="Message('#formOneTrust');" />
+                        </div>
+                    </div>
+                    <div class="mt-3"></div>
+                    <div class="row form-group">
+                        <textarea style="display: none" asp-for="Mensagem"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="SendEmail('#formOneTrust')">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript" src="~/js/NavItems/OneTrustLGPD.js?time=@DateTime.Now.ToString()"></script>

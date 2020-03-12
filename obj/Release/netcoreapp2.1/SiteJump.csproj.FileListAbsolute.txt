@@ -77,3 +77,4 @@ C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\SiteJump.pdb
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\SiteJump.csproj.CopyComplete
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\Razor\Views\NavItems\Treinamentos.cshtml.g.cs
+C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Release\netcoreapp2.1\libman.json

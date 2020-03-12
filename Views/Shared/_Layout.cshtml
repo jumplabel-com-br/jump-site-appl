@@ -129,7 +129,7 @@
                         <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="OneTrustLGPD" id="OneTrustLGPD">Soluções OneTrust para LGPD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link element-text-color-white mobile-text-center" asp-fragment="contato" onclick="$('#navbarNavDropdown').css('display') == 'block' ? $('#navbarNavDropdown').removeClass('show') : ''">Contato</a>
+                        <a class="nav-link element-text-color-white mobile-text-center" asp-fragment="contato" id="NavItemContato" onclick="$('#navbarNavDropdown').css('display') == 'block' ? $('#navbarNavDropdown').removeClass('show') : ''">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link element-text-color-white mobile-text-center" href="https://jumplabel.com.br/blog">Blog</a>
@@ -145,7 +145,7 @@
     <section class="header-back eleven" id="contato">
         <div class="row">
             <div class="col-6">
-                <div class="col-12 box-shadow-opacity-0 color-fff spacing-top-md spacing-bottom-md spacing-top-md-mobile">
+                <div class="col-12 text-center-mobile box-shadow-opacity-0 color-fff spacing-top-md spacing-bottom-md spacing-top-md-mobile">
                     <br>
                     <h2>Fale Conosco</h2>
                     <p class="color-fff p-contato">
@@ -192,12 +192,11 @@
         </div>
     </section>
 
-    <section class="google-map" id="map1"></section>
-    <div id="errorGeoLocation"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.1993369306397!2d-46.64666147075814!3d-23.57571686987634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5996aea9510b%3A0x35bbe42a7c8ccb7a!2sRua%20Coronel%20Oscar%20Porto%2C%20736%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004003-003!5e0!3m2!1spt-BR!2sbr!4v1584019521656!5m2!1spt-BR!2sbr"  height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
     <footer class="header-back twelve">
         <div class="row">
-            <div class="col-12 text-center spacing-top-sm spacing-bottom-sm" >
+            <div class="col-12 text-center spacing-top-sm spacing-bottom-sm spacing-top-plus-7-mobile" >
                 <h2><span class="copyright  color-fff">© 2019 Jump Label Solutions</span></h2>
             </div>
         </div>
@@ -231,7 +230,7 @@
 
     <div class="modal inmodal" id="OneTrust" tabindex="-1" role="dialog" aria-modal="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content animated flipInY">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                     <h4 class="modal-title">WEBINAR</h4>

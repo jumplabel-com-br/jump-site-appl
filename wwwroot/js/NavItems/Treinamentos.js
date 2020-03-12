@@ -12,5 +12,8 @@ function widthMenor700px() {
         $('.item-inbox-100px').removeClass('item-inbox-100px');
         $('.col-2-to-col-1').removeClass('col-2').addClass('col-1');
 
+        $('.h3-subtext-melhor-experiencia').html('Melhore sua experiência com dados. Escolha <strong class="element-text-color-orange">uma ou mais ferramentas</strong> alinhem com a sua necessidade <br /> e realidade profissional.')
+        $('.h3-subtext-focado').html('Focando não apenas em técnicas de extrações e manipulações de dados, mas em <strong class="element-text-color-orange">entender, interpretar <br />  e gerar insights.</strong>')
+
     }
 }

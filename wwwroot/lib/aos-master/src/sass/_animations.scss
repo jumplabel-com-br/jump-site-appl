@@ -175,3 +175,16 @@ $aos-distance: 100px !default;
   transform: perspective(2500px) rotateX(100deg);
   &.aos-animate {transform: perspective(2500px) rotateX(0);}
 }
+
+/**
+ * Rotate animations:
+ * rotate-in
+ */
+
+[data-aos='rotate-in'] {
+  transform: rotate(360deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {transform: rotate(0);opacity: 1;}
+}

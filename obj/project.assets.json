@@ -76,7 +76,7 @@
           "lib/netcoreapp2.0/CodingBlast.dll": {}
         }
       },
-      "HtmlAgilityPack/1.8.4": {
+      "HtmlAgilityPack/1.8.9": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.2",
@@ -4733,11 +4733,11 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Winton.AspNetCore.Seo/2.0.1": {
+      "Winton.AspNetCore.Seo/2.1.0-master0002": {
         "type": "package",
         "dependencies": {
           "Flurl": "2.7.1",
-          "HtmlAgilityPack": "1.8.4",
+          "HtmlAgilityPack": "1.8.9",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.0.4",
           "Microsoft.AspNetCore.Mvc.Formatters.Xml": "2.0.4",
           "Microsoft.AspNetCore.Mvc.Razor": "2.0.4"
@@ -4881,14 +4881,14 @@
         "lib/netcoreapp2.0/GoogleAnalyticsTagHelper.xml"
       ]
     },
-    "HtmlAgilityPack/1.8.4": {
-      "sha512": "gzla2yw6Ic7xk9Hrjb4S7HQvSvHyB5rQH1Tbl3OrxrOBcUVAKrvfL4ZvYm2RGwZuON6ukdZHHCKRnx/VEjuabw==",
+    "HtmlAgilityPack/1.8.9": {
+      "sha512": "qrgNgaJIuOSNxUGEHwRjDgR2yOdJ7UIU/C9mLg3y10IiCgXXFWacbC0+DBT5Je9NF4AdvuSRwFY5SLmhm3vUEQ==",
       "type": "package",
-      "path": "htmlagilitypack/1.8.4",
+      "path": "htmlagilitypack/1.8.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.8.4.nupkg.sha512",
+        "htmlagilitypack.1.8.9.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net20/HtmlAgilityPack.dll",
         "lib/Net20/HtmlAgilityPack.pdb",
@@ -13015,16 +13015,16 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Winton.AspNetCore.Seo/2.0.1": {
-      "sha512": "AiOCpceSTaMUA+q0Z4dcl9l3silKc999GUarkNq3DQPqWr5eJN7f7XO74dQa9HT6eD2Xd4lWHgSjiBzExSVzEQ==",
+    "Winton.AspNetCore.Seo/2.1.0-master0002": {
+      "sha512": "mIGMS/Tsz3vXCio0ePTuHl3GyQe4M9+mEPwH/W8aV5LYqHCfuU207KKXgETpG18xkGA96ThmV90MjFQiW705uA==",
       "type": "package",
-      "path": "winton.aspnetcore.seo/2.0.1",
+      "path": "winton.aspnetcore.seo/2.1.0-master0002",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Winton.AspNetCore.Seo.dll",
         "lib/netstandard2.0/Winton.AspNetCore.Seo.xml",
-        "winton.aspnetcore.seo.2.0.1.nupkg.sha512",
+        "winton.aspnetcore.seo.2.1.0-master0002.nupkg.sha512",
         "winton.aspnetcore.seo.nuspec"
       ]
     }
@@ -13038,7 +13038,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.TypeScript.MSBuild >= 3.7.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Winton.AspNetCore.Seo >= 2.0.1"
+      "Winton.AspNetCore.Seo >= 2.1.0-master0002"
     ]
   },
   "packageFolders": {
@@ -13115,7 +13115,7 @@
           },
           "Winton.AspNetCore.Seo": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "[2.1.0-master0002, )"
           }
         },
         "imports": [

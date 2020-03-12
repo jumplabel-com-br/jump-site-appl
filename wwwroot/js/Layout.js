@@ -4,9 +4,11 @@
     $('#navbarNavDropdown ul li a').each(function () {
         console.log($(this).attr('id'))
         let navItem = window.location.href.split('/')[4];
+
         if (navItem == undefined) {
             $('#Home').addClass('active')
         } else {
+            navItem = navItem.split('#')[0];
             $(this).attr('id') == navItem ? $(this).addClass('active') : $(this).removeClass('active')
         }
     })
@@ -59,6 +61,8 @@ function questionInputRequired(form) {
             $(this).focus();
             return false;
         }
+
+        verification = true;
     });
 }
 
@@ -86,7 +90,13 @@ function Message(form) {
             $(`${form} #Telefone`).val() + ' ;' +
             $(`${form} input[name=tipoCurso]`).val();
     }
-    else if (true) {
+    else if (form == '#formOneTrust') {
+        strMessage = $(`${form} #Nome`).val() + '; ' +
+            $(`${form} #Remetente`).val() + '; ' +
+            $(`${form} #Telefone`).val() + '; ' +
+            $(`${form} #Empresa`).val();
+
+    }else if (true) {
         strMessage = $(`${form} #Nome`).val() + ' efetuou o cadastro com êxito a partir do email ' + $(`${form} #Remetente`).val();
     }
     //strMessage = strMessage.replace(/[<br/>]/g, '\n');
@@ -188,6 +198,6 @@ function showError(error) {
     }
 }
 
-getLocation();
+//getLocation();
 
 $('.mask-telefone').mask('(00) 00000-0000')
