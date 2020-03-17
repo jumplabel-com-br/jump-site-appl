@@ -12310,6 +12310,10 @@ body.md-skin {
     .navbar-top-links .dropdown-alerts {
         margin-left: auto;
     }
+
+    .img-fluid-second {
+        height: 120px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -12385,6 +12389,21 @@ body.md-skin {
         -ms-transition: background-color 500ms linear;
         /*transition: background-color 500ms linear;
         background-color: #f3f3f4;*/
+    }
+
+    .img-col-6-mobile {
+        margin-left: 0rem !important;
+        margin-top: 3rem !important;
+    }
+
+    .img-col-6-mobile img {
+        margin-left: 0rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .img-fluid-second {
+        height: 100px;
+        width: 100px;
     }
 }
 
