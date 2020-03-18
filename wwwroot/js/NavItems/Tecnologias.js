@@ -44,7 +44,7 @@ $('#h2-data-protection').on('click', function () {
 
 function widthMenor700px() {
     if ($(window).width() < 768) {
-        $('img').attr({ 'width': '148', 'height': '149' })
+        //$('img').attr({ 'width': '148', 'height': '149' })
         $('img:eq(1)').attr({ 'width': '58', 'height': '89' })
 
         $('img:eq(0)').attr({ 'width': '150', 'height': '80' })
