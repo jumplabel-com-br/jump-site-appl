@@ -61,7 +61,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n<section class=\"header-back eighteen\">\r\n    <div class=\"row form-group\">\r\n        <div class=\"col-12 text-center color-fff div-consultoria-img\">\r\n            <div>\r\n                ");
             EndContext();
             BeginContext(183, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5fe5e9a0d9ee437d9e2628326e280545", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "af22f26d5b7a4ccdaa134f68f4b4a3a6", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +101,7 @@ using SiteJump.Models;
             WriteLiteral("-0\" data-aos=\"fade-down\"></div>\r\n        </div>\r\n    </div>\r\n</section>\r\n\r\n\r\n<section class=\"section-box-purples\">\r\n    <div class=\"row form-group spacing-top-plus-5\">\r\n        <div class=\"col-4 div-img-cad-purple\">\r\n            ");
             EndContext();
             BeginContext(1561, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7e3eff4aca4f413cab1ccf4cd4e8de88", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "95d696efb7f941cca55098d372cd521e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -122,7 +122,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n        </div>\r\n\r\n        <div class=\"col-4 div-img-cad-purple\">\r\n            ");
             EndContext();
             BeginContext(1766, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "50f37fa9bc7d4e51871cfb3737c51459", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "413d3542cd6e404a82f52bc98c818ffb", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -143,7 +143,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n        </div>\r\n\r\n        <div class=\"col-4 div-img-cad-purple\">\r\n            ");
             EndContext();
             BeginContext(1971, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b86842aea3d94d6bac4311f96ccfd6b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "49200a3520b048d6be10199821ac6513", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -218,7 +218,7 @@ using SiteJump.Models;
             ");
             EndContext();
             BeginContext(4078, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ea00ee39a4a9466fa62c06dd9e0961fe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "91a3152cea1c41f88aaf04171628a111", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -239,7 +239,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n        </div>\r\n\r\n        <div class=\"col-4 div-img-cad-purple\">\r\n            ");
             EndContext();
             BeginContext(4283, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e92fb0fcd8524c4c9b95b008b0f8a793", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "86f8a6156dda43aab55303c0d72b787f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -381,7 +381,7 @@ using SiteJump.Models;
 ");
             EndContext();
             BeginContext(9952, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2dc9be62e2f04dd4a306428fd4481423", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7069050383b64d93b911093cdeae1731", async() => {
                 BeginContext(10048, 4, true);
                 WriteLiteral("\r\n\r\n");
                 EndContext();

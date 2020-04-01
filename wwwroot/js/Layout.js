@@ -79,22 +79,15 @@ function validacaoEmail(field) {
 function Message(form) {
 
     if (form == '#FormEmail') {
-        strMessage = $(`${form} #Nome`).val() + ';' +
-            $(`${form} #Remetente`).val() + ';' +
-            $(`${form} #Telefone`).val() + ';' +
-            $(`${form} #rascunho`).val();
+        strMessage = `O usuário ${$(`${form} #Nome`).val()} efetou um contato através do nosso site, email para contato ${$(`${form} #Remetente`).val()}
+        , telefone para contato ${$(`${form} #Telefone`).val()}, messagem descrita pelo usuário ${$(`${form} #rascunho`).val()};
+        `;
 
     } else if (form == '#formTraining') {
-        strMessage = $(`${form} #Nome`).val() + ' ;' +
-            $(`${form} #Remetente`).val() + ' ;' +
-            $(`${form} #Telefone`).val() + ' ;' +
-            $(`${form} input[name=tipoCurso]`).val();
+        strMessage = `O usuário ${$(`${form} #Nome`).val()} cadastrou no ${$('#modalTraining .modal-title').html()}, através do email: ${$(`${form} #Remetente`).val()}, telefone: ${$(`${form} #Telefone`).val()} e curso do tipo: ${$(`${form} input[name=tipoCurso]`).val()}`;
     }
     else if (form == '#formOneTrust') {
-        strMessage = $(`${form} #Nome`).val() + '; ' +
-            $(`${form} #Remetente`).val() + '; ' +
-            $(`${form} #Telefone`).val() + '; ' +
-            $(`${form} #Empresa`).val();
+        strMessage = `O usuário ${$(`${form} #Nome`).val()}, da empresa: ${$(`${form} #Empresa`).val()} efetou o cadastro no OneTrust através do email: ${$(`${form} #Remetente`).val()}, com o  telefone: ${$(`${form} #Telefone`).val()}.` ;
 
     }else if (true) {
         strMessage = $(`${form} #Nome`).val() + ' efetuou o cadastro com êxito a partir do email ' + $(`${form} #Remetente`).val();
@@ -118,7 +111,11 @@ function SendEmail(form, envioToUser = false) {
         let destino = $(`${form} #Destino`).val();
         let remetente = $(`${form} #Remetente`).val();
 
-        let strM = `Parábens ${strMessage.split(' ')[0]} agora você pode acompanhar seu treinamento através do link ...`
+        if (form == '#formTraining') {
+
+        }
+
+        let strM = `Parábens ${strMessage.split(' ')[0]} pelo seu cadastrado em nosso treinamento, logo entraremos em contato.`
         $(`${form} #Mensagem`).val(strM);
         $(`${form} #Destino`).val(remetente);
         $(`${form} #Remetente`).val(destino);
