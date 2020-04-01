@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Google.Ads.Common": {
+              "target": "Package",
+              "version": "[9.5.1, )"
+            },
             "Google.Apis.Analytics.v3": {
               "target": "Package",
               "version": "[1.43.0.1720, )"
