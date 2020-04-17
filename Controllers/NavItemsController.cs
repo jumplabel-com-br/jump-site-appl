@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SiteJump.Models;
 
 namespace Oficial_Jump.Controllers
 {
@@ -37,5 +38,7 @@ namespace Oficial_Jump.Controllers
         {
             return View();
         }
+
+       
     }
 }

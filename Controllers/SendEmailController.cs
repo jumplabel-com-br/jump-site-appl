@@ -13,12 +13,16 @@ namespace SiteJump.Controllers
     public class SendEmailController : Controller
     {
         private readonly IEmailSender _emailSender;
-        public SendEmailController(IEmailSender emailSender, IHostingEnvironment env)
+        private readonly WebMVCJump _context;
+
+        public SendEmailController(IEmailSender emailSender, WebMVCJump context, IHostingEnvironment env)
         {
             _emailSender = emailSender;
+            _context = context;
         }
 
-        public async Task<int> EnviaEmail(Email email)
+
+        public async Task EnviaEmail(Email email)
         {
             if (ModelState.IsValid)
             {
@@ -28,12 +32,9 @@ namespace SiteJump.Controllers
                 }
                 catch (Exception)
                 {
-                    return 1;
-                    //return RedirectToAction("NavItems","Index");
+                   
                 }
             }
-            return 3;
-            //return RedirectToAction("NavItems", "Index");
         }
 
         public async Task EnvioEmail(string email, string assunto, string mensagem)

@@ -49,7 +49,7 @@ function questionInputRequired(form) {
 
         if ($(this).val() == '') {
             $('.toast-alert-input .toast-body').html('Preencha o campo ' + $(this).attr('placeholder'))
-            $('.toast-alert-input').toast('show');
+            $('.toast-alert-input').toast({ delay: 5000, animation: true }).toast('show');
             $(this).focus();
             verification = false;
             return verification;
@@ -57,7 +57,7 @@ function questionInputRequired(form) {
 
         if ($(this).attr('placeholder') == 'Email' && validacaoEmail($(this).val()) == false) {
             $('.toast-alert-input .toast-body').html('O campo ' + $(this).attr('placeholder') + ' é inválido!')
-            $('.toast-alert-input').toast('show');
+            $('.toast-alert-input').toast({ delay: 5000, animation: true }).toast('show');
             $(this).focus();
             return false;
         }
@@ -87,14 +87,14 @@ function Message(form) {
         strMessage = `O usuário ${$(`${form} #Nome`).val()} cadastrou no ${$('#modalTraining .modal-title').html()}, através do email: ${$(`${form} #Remetente`).val()}, telefone: ${$(`${form} #Telefone`).val()} e curso do tipo: ${$(`${form} input[name=tipoCurso]`).val()}`;
     }
     else if (form == '#formOneTrust') {
-        strMessage = `O usuário ${$(`${form} #Nome`).val()}, da empresa: ${$(`${form} #Empresa`).val()} efetou o cadastro no OneTrust através do email: ${$(`${form} #Remetente`).val()}, com o  telefone: ${$(`${form} #Telefone`).val()}.` ;
+        strMessage = `O usuário ${$(`${form} #Nome`).val()}, da empresa: ${$(`${form} #Empresa`).val()} efetou o cadastro no OneTrust através do email: ${$(`${form} #Remetente`).val()}, com o  telefone: ${$(`${form} #Telefone`).val()}.`;
 
-    }else if (true) {
+    } else if (true) {
         strMessage = $(`${form} #Nome`).val() + ' efetuou o cadastro com êxito a partir do email ' + $(`${form} #Remetente`).val();
     }
     //strMessage = strMessage.replace(/[<br/>]/g, '\n');
 
-    $(`${form} #Mensagem`).val(strMessage);
+    $(`${form} #Mensagem`).val(strMessage.replace(/[<br>]/g, ''));
 
     console.log($(`${form} #Mensagem`).val())
 }
@@ -102,46 +102,70 @@ function Message(form) {
 function SendEmail(form, envioToUser = false) {
     questionInputRequired(form);
 
+
     if (verification == false) {
         return false;
     }
 
-    if (envioToUser) {
+    /*if (envioToUser) {
 
         let destino = $(`${form} #Destino`).val();
         let remetente = $(`${form} #Remetente`).val();
-
-        if (form == '#formTraining') {
-
-        }
 
         let strM = `Parábens ${strMessage.split(' ')[0]} pelo seu cadastrado em nosso treinamento, logo entraremos em contato.`
         $(`${form} #Mensagem`).val(strM);
         $(`${form} #Destino`).val(remetente);
         $(`${form} #Remetente`).val(destino);
 
-    }
+    }*/
 
     $.ajax({
         url: '/SendEmail/EnviaEmail',
         type: 'POST',
-        dataType: 'json',
         data: $(form).serialize(),
+        beforeSend: function () {
+            $('.toast-send-email-success .toast-body').html('O Email está sendo processado, por favor aguarde!');
+            $('.toast-send-email-success').toast({ delay: 9000, animation: true }).toast('show');
+        }
     })
         .done(function (data) {
 
-            if (form == '#FormEmailModal' || form == '#formTraining') {
-                $('.toast-send-email-success .toast-body').html('Inscrição efetuada com êxito');
-                $(`${form} #Destino`).val() == 'contato@jumplabel.com.br' ? SendEmail(`${form}`, true) : '';
+            $('.toast-send-email-success').toast('hide');
 
-                console.log('1');
-            }
+            InsertEmailDB(
+                $('#Nome').val() == undefined ? '' : $('#Nome').val(),
+                $('#Remetente').val() == undefined ? '' : $('#Remetente').val(),
+                $('#Telefone').val() == undefined ? '' : $('#Telefone').val(),
+                $('#Mensagem').val() == undefined ? '' : $('#Mensagem').val(),
+                $('#Destino').val() == undefined ? '' : $('#Destino').val(),
+                $('#Assunto').val() == undefined ? '' : $('#Assunto').val(),
+                $('#Empresa').val() == undefined ? '' : $('#Empresa').val(),
+                $('#TipoCurso').val() == undefined ? '' : $('#TipoCurso').val()
+            )
 
-            $('.toast-send-email-success').toast('show');
+            $('.toast-send-email-success .toast-body').html('Inscrição efetuada com êxito, logo entraremos em contato');
+            $('.toast-send-email-success').toast({ delay: 5000, animation: true }).toast('show');
 
-            console.log('3')
+        })
+        .fail(function () {
+            console.log("error");
+        });
+}
 
 
+function InsertEmailDB(Nome, Remetente, Telefone, Mensagem, Destino, Assunto, Empresa, TipoCurso) {
+
+    let params = { Nome, Remetente, Telefone, Mensagem, Destino, Assunto, Empresa, TipoCurso }
+
+    $.ajax({
+        url: '/Emails/Create',
+        type: 'POST',
+        data: params,
+    })
+        .done(function () {
+            console.log("success");
+
+            $('form input[type="text"], form select').each(function () { $(this).val('') });
         })
         .fail(function () {
             console.log("error");

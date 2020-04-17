@@ -77,6 +77,14 @@
               "target": "Package",
               "version": "[2.1.10, )"
             },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Winton.AspNetCore.Seo": {
               "target": "Package",
               "version": "[2.1.0-master0002, )"
