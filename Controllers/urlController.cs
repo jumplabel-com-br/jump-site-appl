@@ -20,38 +20,38 @@ namespace SiteJump.Controllers
 
             sitemaps.Add(new url()
             {
-                loc = "http://jumplabel.com.br/",
+                loc = "https://jumplabel.com.br/",
                 changefreq = "daily",
                 priority = "1.00"
             });
 
             sitemaps.Add(new url()
             {
-                loc = "http://jumplabel.com.br/NavItems/Solucoes",
+                loc = "https://jumplabel.com.br/NavItems/Solucoes",
                 changefreq = "daily",
                 priority = "0.85"
             });
             sitemaps.Add(new url()
             {
-                loc = "http://jumplabel.com.br/NavItems/Consultoria",
+                loc = "https://jumplabel.com.br/NavItems/Consultoria",
                 changefreq = "daily",
                 priority = "0.85"
             });
             sitemaps.Add(new url()
             {
-                loc = "http://jumplabel.com.br/NavItems/Treinamentos",
+                loc = "https://jumplabel.com.br/NavItems/Treinamentos",
                 changefreq = "daily",
                 priority = "0.85"
             });
             sitemaps.Add(new url()
             {
-                loc = "http://jumplabel.com.br/NavItems/Tecnologias",
+                loc = "https://jumplabel.com.br/NavItems/Tecnologias",
                 changefreq = "daily",
                 priority = "0.85"
             });
             sitemaps.Add(new url()
             {
-                loc = "http://jumplabel.com.br/NavItems/OneTrustLGPD",
+                loc = "https://jumplabel.com.br/NavItems/OneTrustLGPD",
                 changefreq = "daily",
                 priority = "0.85"
             });
