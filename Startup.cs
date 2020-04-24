@@ -54,8 +54,9 @@ namespace SiteJump
             services.AddScoped<SEOHelperService>();
             services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailSender, AuthMessageSender>();
-            
-            services.AddSingleton<ITagHelperComponent>(new GoogleAnalyticsTagHelperComponent("UA-158007482-1"));
+
+            //services.AddSingleton<ITagHelperComponent>(new GoogleAnalyticsTagHelperComponent("UA-158007482-1"));//DESENVOLVIMENTO
+            services.AddSingleton<ITagHelperComponent>(new GoogleAnalyticsTagHelperComponent("UA-158007482-2"));//PRODUCAO
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
