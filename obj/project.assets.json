@@ -2858,6 +2858,15 @@
           }
         }
       },
+      "MvcSiteMapProvider.MVC5.Core/4.6.26": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MvcSiteMapProvider.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MvcSiteMapProvider.dll": {}
+        }
+      },
       "MySqlConnector/0.42.1": {
         "type": "package",
         "compile": {
@@ -8134,6 +8143,19 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "MvcSiteMapProvider.MVC5.Core/4.6.26": {
+      "sha512": "6sp1OGLDhDwQxdapsbMOS/2VNf82Ru+3EpCf74Ta1kAQ1hf+KTVZTjAx8Hty8UjCbYOt0RNA9WkaUpftsLY3NA==",
+      "type": "package",
+      "path": "mvcsitemapprovider.mvc5.core/4.6.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MvcSiteMapProvider.dll",
+        "lib/net45/MvcSiteMapProvider.xml",
+        "mvcsitemapprovider.mvc5.core.4.6.26.nupkg.sha512",
+        "mvcsitemapprovider.mvc5.core.nuspec"
       ]
     },
     "MySqlConnector/0.42.1": {
@@ -13578,6 +13600,7 @@
       "Microsoft.TypeScript.MSBuild >= 3.7.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
       "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.6",
+      "MvcSiteMapProvider.MVC5.Core >= 4.6.26",
       "Pomelo.EntityFrameworkCore.MySql >= 2.1.0",
       "Winton.AspNetCore.Seo >= 2.1.0-master0002"
     ]
@@ -13662,6 +13685,10 @@
             "target": "Package",
             "version": "[3.2.6, )"
           },
+          "MvcSiteMapProvider.MVC5.Core": {
+            "target": "Package",
+            "version": "[4.6.26, )"
+          },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[2.1.0, )"
@@ -13684,5 +13711,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MvcSiteMapProvider.MVC5.Core 4.6.26' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "MvcSiteMapProvider.MVC5.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

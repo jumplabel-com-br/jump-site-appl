@@ -33,6 +33,7 @@
           "Microsoft.TypeScript.MSBuild": "3.7.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
           "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6",
+          "MvcSiteMapProvider.MVC5.Core": "4.6.26",
           "Pomelo.EntityFrameworkCore.MySql": "2.1.0",
           "Winton.AspNetCore.Seo": "2.1.0-master0002"
         },
@@ -329,6 +330,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "MvcSiteMapProvider.MVC5.Core/4.6.26": {
+        "runtime": {
+          "lib/net45/MvcSiteMapProvider.dll": {
+            "assemblyVersion": "4.6.26.0",
+            "fileVersion": "4.6.26.0"
+          }
+        },
+        "compile": {
+          "lib/net45/MvcSiteMapProvider.dll": {}
         }
       },
       "MySqlConnector/0.42.1": {
@@ -3954,6 +3966,13 @@
       "sha512": "sha512-PKKvTxC/isyZjRtFSSfbzFlFNvLUL1JjEGex3YJQXhwGhGplIAQkDvm1PQDl9AgvrLtKv0OnUG80uq5p2I+4CA==",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.10",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.2.1.10.nupkg.sha512"
+    },
+    "MvcSiteMapProvider.MVC5.Core/4.6.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6sp1OGLDhDwQxdapsbMOS/2VNf82Ru+3EpCf74Ta1kAQ1hf+KTVZTjAx8Hty8UjCbYOt0RNA9WkaUpftsLY3NA==",
+      "path": "mvcsitemapprovider.mvc5.core/4.6.26",
+      "hashPath": "mvcsitemapprovider.mvc5.core.4.6.26.nupkg.sha512"
     },
     "MySqlConnector/0.42.1": {
       "type": "package",
