@@ -6,6 +6,7 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics DESENVOLVIMENTO-->
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158007482-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,8 +15,7 @@
 
         gtag('config', 'UA-158007482-1');
     </script>
-
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics PRODUCAO-->
     <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158007482-2"></script>
@@ -26,7 +26,10 @@
 
         gtag('config', 'UA-158007482-2');
     </script>
-    -->
+        -->
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script src="https://cdn.cookielaw.org/langswitch/bbe88846-7ad7-40f4-a08b-5f529302db4f.js" type="text/javascript" charset="UTF-8"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>   <!-- OneTrust Cookies Consent Notice end -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="~/faveicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="~/faveicon/apple-icon-60x60.png">
@@ -144,8 +147,15 @@
                     <li class="nav-item">
                         <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Index" id="Home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Solucoes" id="Solucoes">Soluções</a>
+                    <li class="nav-item dropdown liNavDropMenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Soluções
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu-nav">
+                            <a class="nav-link element-background-black-2 mobile-text-center" asp-controller="NavItems" asp-action="Solucoes" id="Solucoes">Consulting</a>
+                            <a class="nav-link element-background-black-2 mobile-text-center" asp-controller="NavItems" asp-action="OneTrustLGPD" id="OneTrustLGPD">LGPD OneTrust</a>
+                            <a class="nav-link element-background-black-2 mobile-text-center" asp-controller="NavItems" asp-action="Alteryx" id="Alteryx">Alteryx</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Consultoria" id="Consultoria">Consultoria</a>
@@ -155,9 +165,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="Tecnologias" id="Tecnologias">Parcerias e tecnologias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link element-text-color-white mobile-text-center" asp-controller="NavItems" asp-action="OneTrustLGPD" id="OneTrustLGPD">Soluções OneTrust para LGPD</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link element-text-color-white mobile-text-center" href="https://blog.jumplabel.com.br/">Blog</a>
@@ -223,11 +230,11 @@
         </div>
     </section>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.1993369306397!2d-46.64666147075814!3d-23.57571686987634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5996aea9510b%3A0x35bbe42a7c8ccb7a!2sRua%20Coronel%20Oscar%20Porto%2C%20736%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004003-003!5e0!3m2!1spt-BR!2sbr!4v1584019521656!5m2!1spt-BR!2sbr"  height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.1993369306397!2d-46.64666147075814!3d-23.57571686987634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5996aea9510b%3A0x35bbe42a7c8ccb7a!2sRua%20Coronel%20Oscar%20Porto%2C%20736%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004003-003!5e0!3m2!1spt-BR!2sbr!4v1584019521656!5m2!1spt-BR!2sbr" height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
     <footer class="header-back twelve">
         <div class="row">
-            <div class="col-12 text-center spacing-top-sm spacing-bottom-sm spacing-top-plus-7-mobile" >
+            <div class="col-12 text-center spacing-top-sm spacing-bottom-sm spacing-top-plus-7-mobile">
                 <h2><span class="copyright  color-fff ft-18">© 2019 Jump Label Solutions</span></h2>
             </div>
         </div>

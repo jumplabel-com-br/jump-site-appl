@@ -38,6 +38,11 @@ namespace Oficial_Jump.Controllers
         {
             return View();
         }
+
+        public IActionResult Alteryx()
+        {
+            return View();
+        }
         public IActionResult sitemap()
         {
             return View();

@@ -83,3 +83,4 @@ C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\Razor\Views\Emails\Details.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\Razor\Views\Emails\Edit.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\Razor\Views\Emails\Index.cshtml.g.cs
+C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Release\netcoreapp2.1\Razor\Views\NavItems\Alteryx.cshtml.g.cs

@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\landing\one-trust-logo.svg" />
+    <None Include="wwwroot\images\landing\varonis-logo.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Google.Ads.Common" Version="9.5.1" />
     <PackageReference Include="Google.Apis.Analytics.v3" Version="1.43.0.1720" />
     <PackageReference Include="GoogleAnalyticsTagHelperComponent" Version="1.0.0" />

@@ -2,6 +2,7 @@
     $('#navbarNavDropdown ul li a').removeClass('active')
 
     $('#navbarNavDropdown ul li a').each(function () {
+        //debugger;
         console.log($(this).attr('id'))
         let navItem = window.location.href.split('/')[4];
 
@@ -10,6 +11,12 @@
         } else {
             navItem = navItem.split('#')[0];
             $(this).attr('id') == navItem ? $(this).addClass('active') : $(this).removeClass('active')
+        }
+
+        if ($('#Alteryx').attr('class') == 'nav-link element-background-black-2 mobile-text-center active' ||
+            $('#OneTrustLGPD').attr('class') == 'nav-link element-background-black-2 mobile-text-center active' || 
+            $('#Solucoes').attr('class') == 'nav-link element-background-black-2 mobile-text-center active') {
+            $('#navbarDropdown').addClass('active')
         }
     })
 }
@@ -94,7 +101,7 @@ function Message(form) {
     }
     //strMessage = strMessage.replace(/[<br/>]/g, '\n');
 
-    $(`${form} #Mensagem`).val(strMessage.replace(/[<br>]/g, ''));
+    $(`${form} #Mensagem`).val(strMessage.replace(/<br>/g, ''));
 
     console.log($(`${form} #Mensagem`).val())
 }
@@ -143,8 +150,17 @@ function SendEmail(form, envioToUser = false) {
                 $('#TipoCurso').val() == undefined ? '' : $('#TipoCurso').val()
             )
 
-            $('.toast-send-email-success .toast-body').html('Inscrição efetuada com êxito, logo entraremos em contato');
+            $('.toast-send-email-success .toast-body').html('Email enviado com êxito, logo entraremos em contato');
             $('.toast-send-email-success').toast({ delay: 5000, animation: true }).toast('show');
+
+            $('#Nome').val() == undefined ? '' : $('#Nome').val(''),
+            $('#Remetente').val() == undefined ? '' : $('#Remetente').val(''),
+            $('#Telefone').val() == undefined ? '' : $('#Telefone').val(''),
+            $('#Mensagem').val() == undefined ? '' : $('#Mensagem').val(''),
+            $('#rascunho').val() == undefined ? '' : $('#rascunho').val(''),
+            $('#Empresa').val() == undefined ? '' : $('#Empresa').val(''),
+            $('#TipoCurso').val() == undefined ? '' : $('#TipoCurso').val('')
+
 
         })
         .fail(function () {
