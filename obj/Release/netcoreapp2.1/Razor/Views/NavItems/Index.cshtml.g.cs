@@ -104,7 +104,7 @@ using SiteJump.Models;
                                 ");
             EndContext();
             BeginContext(1628, 248, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1dc41f9a11fc44a89bc445321b1c3acc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b28c367f720a45a7bb9c375d0a909cfa", async() => {
                 BeginContext(1682, 187, true);
                 WriteLiteral("\r\n                                    <button type=\"submit\" data-aos=\"fade-up\" class=\"btn btn-lg btn-rounded btn-warning btn-pattern-sm\">Conheça</button>\r\n                                ");
                 EndContext();
@@ -203,7 +203,7 @@ using SiteJump.Models;
                     ");
             EndContext();
             BeginContext(5442, 227, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c587e092b2544476896ec627a69b0f29", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7d1d9614bb64bee83d87aff7af37121", async() => {
                 BeginContext(5496, 166, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" data-aos=\"fade-up\" class=\"btn btn-lg btn-rounded btn-warning btn-pattern-sm\">Saiba mais</button>\r\n                    ");
                 EndContext();
@@ -261,7 +261,7 @@ using SiteJump.Models;
                 ");
             EndContext();
             BeginContext(7337, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d4e7d2a6261241239a207ec3bd8eec54", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a0efbea5c4e642378c2453a101124e8b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -281,7 +281,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                <div class=\"text-right spacing-bottom\">\r\n                    ");
             EndContext();
             BeginContext(7522, 284, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b370ba3085e4292a552d18b37ff6878", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4708d1c545b445db2222590d26bf72c", async() => {
                 BeginContext(7626, 173, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" data-aos=\"fade-up\" class=\"btn btn-lg btn-rounded btn-info\">DATA ENGINEERING <br /> &  BIG DATA</button>\r\n                    ");
                 EndContext();
@@ -309,7 +309,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"col-3 text-center div-solucoes-inteligentes ml-positive-25px spacing-top-md-mobile\">\r\n                ");
             EndContext();
             BeginContext(7980, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "985ef0062c074db5bf46355dedab5fea", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "66313911ef0b4e0b996d9a63f5515fcb", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -329,7 +329,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                <div class=\"text-center\">\r\n                    ");
             EndContext();
             BeginContext(8149, 322, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c101dd6fbf384c79bb84ef375665850e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "809a8fca9ce64aaf9185f1f969212870", async() => {
                 BeginContext(8256, 208, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" data-aos=\"fade-up\" class=\"btn btn-lg btn-rounded btn-info btn-solucoes-inteligentes-nuvem\">DATA SCIENCE <br /> & MACHINE LEARNING</button>\r\n                    ");
                 EndContext();
@@ -357,7 +357,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"col-3 text-left div-solucoes-inteligentes ml-positive-25px spacing-top-md-mobile\">\r\n                ");
             EndContext();
             BeginContext(8643, 113, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6bb89df439b746ae8660552d5356dee9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2366283c2d8e44dc842d0c3050223817", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -377,7 +377,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                <div class=\"text-left\">\r\n                    ");
             EndContext();
             BeginContext(8819, 298, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "817aca18a8ca4addae5bcd725a6ac485", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea9aa9eed89a4d36a2d1819466b7b769", async() => {
                 BeginContext(8915, 195, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" data-aos=\"fade-up\" class=\"btn btn-lg btn-rounded btn-info btn-solucoes-inteligentes-visualizacao\">DATA VISUALIZATION</button>\r\n                    ");
                 EndContext();
@@ -405,7 +405,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"col-3 text-left div-solucoes-inteligentes spacing-top-md-mobile\">\r\n                ");
             EndContext();
             BeginContext(9272, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3dfe92b56050475bacf2c073a149dfd3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e57616df91c9452aa2fb27fd856663e2", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -425,7 +425,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n                <div class=\"text-left spacing-bottom-md-mobile\">\r\n                    ");
             EndContext();
             BeginContext(9465, 320, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbb19e88edb843a6a6e99fde4d087383", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4763c55d7394391b2c9ed5be5e3f58f", async() => {
                 BeginContext(9556, 222, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" data-aos=\"fade-up\" class=\"spacing-bottom-mobile btn btn-lg btn-rounded btn-info btn-solucoes-inteligentes-robo\">ROBOT PROCESS <br /> AUTOMATION</button>\r\n                    ");
                 EndContext();
@@ -476,7 +476,7 @@ using SiteJump.Models;
                         ");
             EndContext();
             BeginContext(11098, 260, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38980f46a583438d92467f936ed132ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e26debd8302f4dea8ddea85975bf05cc", async() => {
                 BeginContext(11155, 196, true);
                 WriteLiteral("\r\n                            <button type=\"submit\" data-aos=\"fade-up\" class=\"btn btn-lg btn-rounded btn-warning spacing-bottom-mobile btn-pattern-sm\">Saiba mais</button>\r\n                        ");
                 EndContext();
@@ -523,7 +523,7 @@ using SiteJump.Models;
             WriteLiteral("nline. Somos a primeira Academia SAS <br /> da América Latina!</h3>\r\n                </div>\r\n                <div class=\"elementor-button item-inbox-25px text-center-mobile\">\r\n                    ");
             EndContext();
             BeginContext(12578, 243, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f18c28987c3453f9b71856b1d468e06", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e419aa7e34ae4feb9dad8fbb51296e11", async() => {
                 BeginContext(12636, 178, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" data-aos=\"fade-up\" class=\"spacing-bottom btn btn-lg btn-rounded btn-warning btn-pattern-sm\">Conheça</button>\r\n                    ");
                 EndContext();
@@ -561,7 +561,7 @@ using SiteJump.Models;
 ");
             EndContext();
             BeginContext(13570, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e5827e8d694b407583fea579146580d6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b96a1aeac8764a7a81470f2986a173cf", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
