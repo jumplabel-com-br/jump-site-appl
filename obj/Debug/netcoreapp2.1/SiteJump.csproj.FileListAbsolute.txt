@@ -36,5 +36,3 @@ C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.
 C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.dll
 C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.pdb
 C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.csproj.CopyComplete
-C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.dll
-C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.Views.dll
