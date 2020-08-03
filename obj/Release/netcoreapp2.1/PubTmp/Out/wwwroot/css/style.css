@@ -10952,6 +10952,12 @@ section > h3 {
         text-align: center;
     }
 
+    #dropdown-menu-nav {
+        border-width: medium;
+        border-style: solid;
+        border-color: #fff;
+    }
+
     .landing-page .navbar-default .nav li a:hover {
         color: #EF8822;
     }
