@@ -4741,12 +4741,14 @@ a.forum-item-title:hover {
 
     .div-solucoes-inteligentes:nth-child(1) button:nth-child(1) {
         margin-top: 30px;
+        width: 75%;
     }
 
     .div-solucoes-inteligentes:nth-child(2) button:nth-child(1),
     .div-solucoes-inteligentes:nth-child(3) button:nth-child(1),
     .div-solucoes-inteligentes:nth-child(4) button:nth-child(1) {
         margin-top: 40px;
+        width: 75%;
     }
 
     .div-solucoes-inteligentes:nth-child(4) button:nth-child(1) {

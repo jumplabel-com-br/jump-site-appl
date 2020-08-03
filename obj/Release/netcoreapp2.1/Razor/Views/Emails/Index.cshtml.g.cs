@@ -66,7 +66,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(115, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f383c7a1ec854f68bb657c8dfce06b71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "692787b312b94defbb93a63f4271ab8e", async() => {
                 BeginContext(138, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -276,7 +276,7 @@ using SiteJump.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(2138, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5877520b6eb41a2b2ef4b1e35f8e7dd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c38d0a8686a14fd1a78f8530fc0fcd0a", async() => {
                 BeginContext(2183, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -311,7 +311,7 @@ using SiteJump.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(2211, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1323dd1218514d99a848ec3aae2e52df", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37f31c16ff8144c290c5f81b0308c947", async() => {
                 BeginContext(2259, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -346,7 +346,7 @@ using SiteJump.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(2290, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d9ec32c14094cc7bbb01c00b4787ba8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6fe06e928e8649d88184adfc96285883", async() => {
                 BeginContext(2337, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
