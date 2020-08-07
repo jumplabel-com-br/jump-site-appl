@@ -11014,16 +11014,17 @@ section > h3 {
     }
 }
 
+.container-SAS {
+    padding-top: 170px;
+    margin-top: auto;
+    padding-bottom: 65px;
+    margin-bottom: auto;
+}
+
+
 @media (min-width: 992px) {
     .landing-page .featurette-heading {
         margin-top: 120px;
-    }
-
-    .container {
-        padding-top: 130px;
-        margin-top: auto;
-        padding-bottom: 65px;
-        margin-bottom: auto;
     }
 }
 
