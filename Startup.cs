@@ -56,8 +56,8 @@ namespace SiteJump
             services.AddTransient<IEmailSender, AuthMessageSender>();
 
             //services.AddSingleton<ITagHelperComponent>(new GoogleAnalyticsTagHelperComponent("UA-158007482-1"));//DESENVOLVIMENTO
-            services.AddSingleton<ITagHelperComponent>(new GoogleAnalyticsTagHelperComponent("UA-158007482-2"));//PRODUCAO
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddSingleton<ITagHelperComponent>(new GoogleAnalyticsTagHelperComponent("UA-158007482-2"));//PRODUCAO
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
