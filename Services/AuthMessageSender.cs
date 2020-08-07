@@ -36,13 +36,13 @@ namespace SiteJump.Services
 
                 MailMessage mail = new MailMessage()
                 {
-                    From = new MailAddress(_emailSettings.UsernameEmail, "Jose Carlos Macoratti")
+                    From = new MailAddress(_emailSettings.UsernameEmail, "Jump Label")
                 };
 
                 mail.To.Add(new MailAddress(toEmail));
                 mail.CC.Add(new MailAddress(_emailSettings.CcEmail));
 
-                mail.Subject = "Macoratti .net - " + subject;
+                mail.Subject = subject;
                 mail.Body = message;
                 mail.IsBodyHtml = true;
                 mail.Priority = MailPriority.High;
