@@ -11018,6 +11018,13 @@ section > h3 {
     .landing-page .featurette-heading {
         margin-top: 120px;
     }
+
+    .container {
+        padding-top: 130px;
+        margin-top: auto;
+        padding-bottom: 65px;
+        margin-bottom: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -14123,13 +14130,6 @@ body.md-skin {
     margin-right: 0 !important;
     margin-left: 0 !important;
     margin-bottom: 12px;
-}
-
-.container {
-    padding-top: 130px;
-    margin-top: auto;
-    padding-bottom: 65px;
-    margin-bottom: auto;
 }
 
 .hideme {
