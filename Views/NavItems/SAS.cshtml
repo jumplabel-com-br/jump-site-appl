@@ -1,0 +1,68 @@
+﻿
+
+@model SiteJump.Models.Email
+
+<section class="header-back SAS">
+    <div class="container">
+        <div class="row form-group">
+            <div class="col-1"></div>
+            <div class="col-sm-4">
+                <h1 class="text-white h1-SAS">Descubra o poder dos dados para o seu sucesso!</h1>
+                <p class="text-white p-SAS">
+                    O Pacote <strong class="element-text-color-orange">SAS Analytics PRO</strong> oferece uma solução integral de análise, possibilitando a exploração dos dados
+                    durante toda a jornada de seu negócio em transformar dados em decisão.
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 center mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formSAS">
+                            <input type="hidden" asp-for="Destino" value="contato@jumplabel.com.br" />
+                            <input type="hidden" asp-for="Assunto" value="SAS" />
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4 class="h4-more-information">Mais informações</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input class="form-control" asp-for="Nome" type="text" placeholder="Nome e sobrenome" onkeyup="Message('#formSAS');">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input class="form-control" asp-for="Remetente" type="text" placeholder="Email" onkeyup="Message('#formSAS');">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input class="form-control mask-telefone" asp-for="Telefone" type="text" placeholder="Telefone" onkeyup="Message('#formSAS');">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input class="form-control" type="text" name="Empresa" id="Empresa" placeholder="Empresa" onkeyup="Message('#formSAS');">
+                                </div>
+                            </div>
+
+                            <textarea style="display: none" asp-for="Mensagem"></textarea>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn invert-jump btn-lg btn-block" onclick="SendEmail('#formSAS', true)">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</section>
+

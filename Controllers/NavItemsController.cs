@@ -43,6 +43,12 @@ namespace Oficial_Jump.Controllers
         {
             return View();
         }
+
+        public IActionResult SAS()
+        {
+            return View();
+        }
+
         public IActionResult sitemap()
         {
             return View();

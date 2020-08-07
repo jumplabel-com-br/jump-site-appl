@@ -36,8 +36,6 @@ C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.
 C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.dll
 C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.pdb
 C:\Users\JumpLabel\Documents\SiteJump\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.csproj.CopyComplete
-C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.dll
-C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.Views.dll
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\appsettings.Development.json
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\libman.json
@@ -45,9 +43,10 @@ C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.deps.json
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.runtimeconfig.json
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.runtimeconfig.dev.json
+C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.dll
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.pdb
+C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.Views.dll
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\bin\Debug\netcoreapp2.1\SiteJump.Views.pdb
-C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.csprojAssemblyReference.cache
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.RazorAssemblyInfo.cache
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.RazorAssemblyInfo.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\SiteJump.AssemblyInfoInputs.cache
@@ -68,6 +67,7 @@ C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\Consultoria.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\Index.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\OneTrustLGPD.cshtml.g.cs
+C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\SAS.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\Solucoes.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\Tecnologias.cshtml.g.cs
 C:\Users\MatheusGomesFerreira\Documents\JumpSite\SiteJump\obj\Debug\netcoreapp2.1\Razor\Views\NavItems\Treinamentos.cshtml.g.cs

@@ -96,7 +96,9 @@ function Message(form) {
     else if (form == '#formOneTrust') {
         strMessage = `O usuário ${$(`${form} #Nome`).val()}, da empresa: ${$(`${form} #Empresa`).val()} efetou o cadastro no OneTrust através do email: ${$(`${form} #Remetente`).val()}, com o  telefone: ${$(`${form} #Telefone`).val()}.`;
 
-    } else if (true) {
+    } else if (form == '#formSAS') {
+        strMessage = `O usuário ${$(`${form} #Nome`).val()}, da empresa: ${$(`${form} #Empresa`).val()} efetou o cadastro no SAS através do email: ${$(`${form} #Remetente`).val()}, com o  telefone: ${$(`${form} #Telefone`).val()}.`;
+    }else if (true) {
         strMessage = $(`${form} #Nome`).val() + ' efetuou o cadastro com êxito a partir do email ' + $(`${form} #Remetente`).val();
     }
     //strMessage = strMessage.replace(/[<br/>]/g, '\n');
