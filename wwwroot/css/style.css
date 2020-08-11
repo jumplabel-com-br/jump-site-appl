@@ -10150,6 +10150,7 @@ body.landing-page {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100% !important;
 }
 
 .pt-50 {
@@ -14161,10 +14162,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .h1-SAS {
     font-size: 46px !important;
+    line-height: 0.9 !important;
 }
 
 .p-SAS {
     font-size: 22px !important;
+    padding-top: 10px;
 }
 
 .h4-more-information {
