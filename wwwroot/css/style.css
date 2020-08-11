@@ -11021,6 +11021,11 @@ section > h3 {
     margin-bottom: auto;
 }
 
+.sub-more-information {
+    text-align: left;
+    color: #4F4F4F;
+}
+
 
 @media (min-width: 992px) {
     .landing-page .featurette-heading {

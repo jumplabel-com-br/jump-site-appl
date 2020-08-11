@@ -1,68 +1,208 @@
-﻿
+﻿@model SiteJump.Models.Email
+@using SiteJump.Services
+@inject SEOHelperService Services
+<!DOCTYPE html>
+<html>
+<head>
 
-@model SiteJump.Models.Email
+    <!-- Global site tag (gtag.js) - Google Analytics DESENVOLVIMENTO-->
 
-<section class="header-back SAS">
-    <div class="container-SAS">
-        <div class="row form-group">
-            <div class="col-1"></div>
-            <div class="col-sm-4">
-                <h1 class="text-white h1-SAS">Descubra o poder dos dados para o seu sucesso!</h1>
-                <p class="text-white p-SAS">
-                    O Pacote <strong class="element-text-color-orange">SAS Analytics PRO</strong> oferece uma solução integral de análise, possibilitando a exploração dos dados
-                    durante toda a jornada de seu negócio em transformar dados em decisão.
-                </p>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158007482-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158007482-1');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics PRODUCAO-->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158007482-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158007482-2');
+    </script>
+    -->
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script src="https://cdn.cookielaw.org/langswitch/bbe88846-7ad7-40f4-a08b-5f529302db4f.js" type="text/javascript" charset="UTF-8"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>   <!-- OneTrust Cookies Consent Notice end -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="~/faveicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/faveicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/faveicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/faveicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/faveicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/faveicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/faveicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/faveicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/faveicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/faveicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/faveicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/faveicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/faveicon/favicon-16x16.png">
+    <link rel="manifest" href="~/faveicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/faveicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+
+    <link href="~/lib/aos-master/demo/css/styles.css" rel="stylesheet" />
+    <link href="~/lib/aos-master/dist/aos.css" rel="stylesheet" />
+
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/Popper/popper.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/metisMenu/dist/jquery.metisMenu.js"></script>
+        <script src="~/lib/slimScroll/jquery.slimscroll.js"></script>
+        <script src="~/lib/pace/pace.js"></script>
+        <script src="~/lib/toastr/toastr.js"></script>
+        <script src="~/lib/toastr/toastr.min.js"></script>
+        <script src="~/js/script.js" asp-append-version="true"></script>
+
+        <!-- Only for demo purpose -->
+        <script src="~/js/skin.config.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/Popper/popper.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/lib/metisMenu/dist/jquery.metisMenu.js"></script>
+        <script src="~/lib/pace/pace.min.js"></script>
+        <script src="~/lib/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="~/lib/toastr/toastr.js"></script>
+        <script src="~/lib/toastr/toastr.min.js"></script>
+        <script src="~/js/script.js" asp-append-version="true"></script>
+    </environment>
+
+    <!--Impor JQuery Mask Plugin-->
+    <script src="~/lib/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
+    <script src="~/lib/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="~/lib/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/lib/iCheck/icheck.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ajax-unobtrusive@3.2.6/dist/jquery.unobtrusive-ajax.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #navbarNavDropdown, #contato, iframe, .twelve{
+            display: none !important;
+        }
+    </style>
+</head>
+<body id="page-top" class="landing-page no-skin-config js-focus-visible pace-done">
+
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner">
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5 center mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="formSAS">
-                            <input type="hidden" asp-for="Destino" value="contato@jumplabel.com.br" />
-                            <input type="hidden" asp-for="Assunto" value="SAS" />
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h4 class="h4-more-information">Mais informações</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input class="form-control" asp-for="Nome" type="text" placeholder="Nome e sobrenome" onkeyup="Message('#formSAS');">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input class="form-control" asp-for="Remetente" type="text" placeholder="Email" onkeyup="Message('#formSAS');">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input class="form-control mask-telefone" asp-for="Telefone" type="text" placeholder="Telefone" onkeyup="Message('#formSAS');">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input class="form-control" type="text" name="Empresa" id="Empresa" placeholder="Empresa" onkeyup="Message('#formSAS');">
-                                </div>
-                            </div>
-
-                            <textarea style="display: none" asp-for="Mensagem"></textarea>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <button type="button" class="btn invert-jump btn-lg btn-block" onclick="SendEmail('#formSAS', true)">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
+        </div>
+        <div class="pace-activity">
         </div>
     </div>
-</section>
+    <div class="navbar-wrapper" data-aos="fade-down">
+        <nav class="navbar navbar-expand-lg navbar-default">
+            <div class="container-mobile-text-center">
+                <div class="col-12">
+                    <a href="https://jumplabel.com.br"><img src="~/Componentes/jumplabellogo.svg" height="80" width="150" title="jump-label-logo" alt="jump-label-logo"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="header-back SAS">
+        <div class="container-SAS">
+            <div class="row form-group">
+                <div class="col-1"></div>
+                <div class="col-sm-4">
+                    <h1 class="text-white h1-SAS mt-4">Descubra o poder dos dados para o seu sucesso!</h1>
+                    <p class="text-white p-SAS">
+                        O Pacote <strong class="element-text-color-orange">SAS Analytics PRO</strong> oferece uma solução integral de análise, possibilitando a exploração dos dados
+                        durante toda a jornada de seu negócio em transformar dados em decisão.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="~/Componentes/jumplabellogo.svg" alt="Alternate Text" height="80" width="150" />
+                        </div>
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <img src="~/images/landing/logo_sas.png" alt="Alternate Text" height="50" width="120" class="mt-4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5 center mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="formSAS">
+                                <input type="hidden" asp-for="Destino" value="contato@jumplabel.com.br" />
+                                <input type="hidden" asp-for="Assunto" value="SAS" />
 
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="h4-more-information">Faça seu teste gratuito</h4>
+                                        <p class="sub-more-information">Receba um atendimento especializado e ganhe um teste gratuito por 30 dias.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" asp-for="Nome" type="text" placeholder="Nome e sobrenome" onkeyup="Message('#formSAS');">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" asp-for="Remetente" type="text" placeholder="Email" onkeyup="Message('#formSAS');">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input class="form-control mask-telefone" asp-for="Telefone" type="text" placeholder="Telefone" onkeyup="Message('#formSAS');">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" type="text" name="Empresa" id="Empresa" placeholder="Empresa" onkeyup="Message('#formSAS');">
+                                    </div>
+                                </div>
+
+                                <textarea style="display: none" asp-for="Mensagem"></textarea>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <button type="button" class="btn invert-jump btn-lg btn-block" onclick="SendEmail('#formSAS', true)">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
